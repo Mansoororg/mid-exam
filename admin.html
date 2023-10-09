@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="admin-panel">
+        <h2>Admin Panel</h2>
+        <form id="login-form">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+        </form>
+        <div id="admin-functions">
+            <!-- Admin functionalities (add/edit/remove menu items, update promotions) go here -->
+        </div>
+    </div>
+
+    <!-- ... (previous HTML code) ... -->
+
+<div id="admin-functions">
+    <h3>Add Menu Item</h3>
+    <form id="menu-form">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName">
+        <label for="itemPrice">Item Price:</label>
+        <input type="number" id="itemPrice" name="itemPrice">
+        <button type="submit">Add Item</button>
+    </form>
+
+    <h3>Edit Menu Item</h3>
+    <form id="edit-menu-form">
+        <label for="editItemName">Item Name:</label>
+        <input type="text" id="editItemName" name="editItemName">
+        <label for="editItemPrice">Item Price:</label>
+        <input type="number" id="editItemPrice" name="editItemPrice">
+        <button type="submit">Edit Item</button>
+    </form>
+
+    <h3>Remove Menu Item</h3>
+    <form id="remove-menu-form">
+        <label for="removeItemName">Item Name:</label>
+        <input type="text" id="removeItemName" name="removeItemName">
+        <button type="submit">Remove Item</button>
+    </form>
+
+    <h3>Update Promotions</h3>
+    <form id="promotions-form">
+        <label for="promotionText">Promotion Text:</label>
+        <input type="text" id="promotionText" name="promotionText">
+        <button type="submit">Update Promotion</button>
+    </form>
+
+    <ul id="menu-list"></ul>
+</div>
+
+<!-- ... (rest of your HTML code) ... -->
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
